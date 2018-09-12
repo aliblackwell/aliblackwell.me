@@ -3,13 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>Alasdair Blackwell's Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.css"/>
+    <link rel="stylesheet" href="./css/master.css">
   </head>
   <body>
 
-  <header>
-    <h1>Alasdair Blackwell</h1>
+  <header class="page">
+    <h1 id="logo" class="highlight">Alasdair Blackwell</h1>
     <h2>Designer, Developer, Educator</h2>
-    <nav>
+    <nav class="primary-nav">
       <ul>
         <li>
           <a href="#about" title="About Ali">About</a>
@@ -24,12 +26,12 @@
     </nav>
   </header>
 
-  <section id="about">
-    <h1>About Ali</h1>
+  <section class="page" id="about">
+    <h1 class="highlight">About Ali</h1>
     <p>This website contains my reflections on politics, society, and the future.</p>
   </section>
 
-  <section id="learning-blog">
+  <section class="page" id="learning-blog">
     <header>
       <h1>Learning Blog</h1>
       <h2>Becoming a web design ninja</h2>
@@ -42,12 +44,14 @@
 
     </article>
     <article id="semantic-html">
+      <h1>Semantic HTML Tutorial</h1>
       <a href="./tutorials/semantic-html/article.html" title="Code of the semantic html tutorial">Browse the result of my tutorial</a>
     </article>
   </section>
 
-  <section id="contact">
+  <section class="page" id="contact">
     <p>You can contact me via email at <a href="mailto:aliblackwell@protonmail.com">aliblackwell&#64;protonmail.com</p>
+      <button  class="ui button">Email me</button>
   </section>
 
 
