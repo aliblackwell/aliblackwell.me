@@ -2,16 +2,92 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Alasdair Blackwell's Website</title>
+     <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
+     <link rel="stylesheet" href="./css/bootstrap.css">
+     <link rel="stylesheet" href="./css/master.css">
   </head>
   <body>
-  <header>
-    <h1>Alasdair Blackwell</h1>
+
+  <header class="page">
+    <h1 id="logo" class="highlight">Alasdair Blackwell</h1>
     <h2>Designer, Developer, Educator</h2>
+    <nav class="primary-nav">
+      <ul>
+        <li>
+          <a href="#about" title="About Ali">About</a>
+        </li>
+        <li>
+          <a href="#learning-blog" title="Ali's Learning Blog">Learning Blog</a>
+        </li>
+        <li>
+          <a href="#contact" title="Contact Ali">Contact</a>
+        </li>
+      </ul>
+    </nav>
   </header>
-  <section>
-    <h1>About Ali</h1>
-    <p>This website contains my reflections on politics, society, and the future.</p>
+
+  <section class="page" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h1 class="highlight">About Ali</h1>
+          <p>This website contains my reflections on politics, society, and the future.</p>
+        </div><!-- end of col 1 -->
+        <div class="col-md-6">
+          <figure>
+            <img src="./img/ali.jpg" alt="Ali looking baffled">
+            <figcaption>Image &copy; Ali's Selfie</figcaption>
+          </figure>
+        </div> <!-- end of col 2 -->
+      </div> <!-- end of row -->
+    </div> <!-- end of container -->
   </section>
+
+  <section class="page" id="learning-blog">
+    <header>
+      <h1>Learning Blog</h1>
+      <h2>Experiments in web technologies</h2>
+    </header>
+    <article id="process">
+      <h1>Our development process</h1>
+      <p>We managed the <a     href="https://trello.com/b/7i9iUglh/alis-personal-website-project" title="Browse my design and development Trello board" target="_blank">design and development process of this website using Trello</a>.
+      </p>
+      <p>My project partner was Emma Hunt and you can <a href="https://www.emmahunt.me" title="Emma Hunt's website">browse her website here</a>.</p>
+
+    </article>
+    <article id="semantic-html">
+      <h1>Semantic HTML Tutorial</h1>
+      <a href="./tutorials/semantic-html/article.html" title="Code of the semantic html tutorial">Browse the result of my tutorial</a>
+    </article>
+
+    <article id="our-first-steps">
+      <h1>Our first week doing web design at Ada</h1>
+
+
+    </article>
+
+
+  </section>
+
+  <section class="page" id="contact">
+    <p>You can contact me via email at <a href="mailto:aliblackwell@protonmail.com">aliblackwell&#64;protonmail.com</a></p>
+
+    <form name="contact" netlify>
+    <p>
+      <label>Name <input type="text" name="name" /></label>
+    </p>
+    <p>
+      <label>Email <input type="email" name="email" /></label>
+    </p>
+    <p>
+      <button type="submit">Send</button>
+    </p>
+  </form>
+  </section>
+
+
+
   </body>
 </html>

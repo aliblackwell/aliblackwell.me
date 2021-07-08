@@ -1,0 +1,100 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+body {
+  background-color: #fd9797;
+  font-family: 'Noto Serif', serif;
+}
+
+h2 {
+  color: blue;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#learning-blog article h1 {
+  text-align: center;
+}
+
+#logo {
+  text-align: left;
+}
+
+.highlight {
+  color: blue;
+}
+
+section p:first-of-type {
+  font-size: 120%;
+}
+
+.primary-nav {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  background: rgba(0,0,0,1);
+}
+
+.primary-nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+.primary-nav li {
+  display: inline;
+}
+
+.primary-nav a {
+  display: inline-block;
+  padding: 15px;
+  color: white;
+  text-decoration: none;
+}
+
+
+
+.primary-nav a:hover {
+  background: rgba(255,255,255,.3);
+}
+
+
+.page {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 5em 20px 20px;
+  margin: 0;
+  border-bottom: 20px solid black;
+}
+
+@media (min-width: 900px) {
+
+  .primary-nav a {
+    padding: 25px;
+  }
+
+  .page {
+    height: 100vh;
+  }
+
+}
